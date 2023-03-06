@@ -8,7 +8,7 @@ const DIRECTION = {
 class MapSite {
     constructor() {}
     enter() {}
-    
+
 }
 
 class Room extends MapSite {
@@ -48,7 +48,7 @@ class Maze {
     addRoom(room) {
         this.rooms.push(room)
     }
-    roomNo(roomNumber) {
+    roomNumber(roomNumber) {
         // поиск комнаты по номеру
     }  
 }
