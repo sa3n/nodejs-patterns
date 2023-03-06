@@ -49,7 +49,12 @@ class Maze {
         this.rooms.push(room)
     }
     roomNumber(roomNumber) {
-        // поиск комнаты по номеру
+        for (const room of this.rooms) {
+            if (room.roomNumber === roomNumber) {
+                return room
+            }
+        }
+        return null
     }  
 }
 
