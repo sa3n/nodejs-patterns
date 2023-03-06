@@ -58,7 +58,7 @@ class Maze {
     }  
 }
 
-// --
+// -----
 
 class MazeBuilder {
     buildMaze() {}

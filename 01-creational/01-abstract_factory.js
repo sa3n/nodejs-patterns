@@ -110,7 +110,7 @@ class BombedWall extends Wall {
 
 class RoomWithABomb extends Room {
     constructor(roomNumber) {
-        super()
+        super(roomNumber)
     }
 }
 
