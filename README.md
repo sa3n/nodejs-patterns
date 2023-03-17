@@ -1,5 +1,7 @@
 # NodeJS Design Patterns
 
+Смотри книгу «Паттерны проектирования» (GoF)
+
 ## Creational
 
 * Abstract Factory
