@@ -108,7 +108,6 @@ const bombedMazeFactory = new MazePrototypeFactory(new Maze(), new BombedWall(),
 
 function createMaze(mazeFactory) {
     const maze = mazeFactory.makeMaze()
-    console.log(maze.__proto__)
     const room1 = mazeFactory.makeRoom(101)
     const room2 = mazeFactory.makeRoom(102)
     const door = mazeFactory.makeDoor(room1, room2)
