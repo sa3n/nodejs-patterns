@@ -58,6 +58,8 @@ class Maze {
     }  
 }
 
+// USAGE EXAMPLE:
+
 function createMaze() {
     const maze = new Maze()
     const room1 = new Room(1)
@@ -81,3 +83,12 @@ function createMaze() {
 }
 
 createMaze()
+
+module.exports = {
+    DIRECTION,
+    MapSite,
+    Room,
+    Wall,
+    Door,
+    Maze
+}

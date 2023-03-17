@@ -1,66 +1,6 @@
-const DIRECTION = {
-    NORTH: 0,
-    EAST: 1,
-    SOUTH: 2,
-    WEST: 3
-}
+const { Room, Door, Wall, Maze, DIRECTION } = require('./00-start-code')
 
-class MapSite {
-    constructor() {}
-    enter() {}
-    
-}
-
-class Room extends MapSite {
-    constructor(roomNumber) {
-        super()
-        this.roomNumber = roomNumber
-        this.sides = new Array(4)
-    }
-    getSide(direction) {}
-    setSide(direction, mapSite) {
-        this.sides[direction] = mapSite
-    }
-}
-
-class Wall extends MapSite {
-    constructor() {
-        super()
-    }
-}
-
-class Door extends MapSite {
-    constructor(room1, room2) {
-        super()
-        this.isOpen = false
-        this.room1 = room1
-        this.room2 = room2
-    }
-    otherSideFrom(room) {
-
-    }
-}
-
-class Maze {
-    constructor() {
-        this.rooms = []
-    }
-    addRoom(room) {
-        this.rooms.push(room)
-    }
-    roomNumber(roomNumber) {
-        for (const room of this.rooms) {
-            if (room.roomNumber === roomNumber) {
-                return room
-            }
-        }
-        return null
-    }  
-}
-
-// -----
-
-class MazeFactory { // Abstract Factory
+class MazeFactory {
     constructor() {}
     makeMaze() {
         return new Maze()

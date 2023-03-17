@@ -2,6 +2,8 @@
 
 Смотри книгу «Паттерны проектирования» (GoF)
 
+TODO: переместить классы EnchatedX, BombedX
+
 ## Creational
 
 * Abstract Factory
